@@ -1,11 +1,12 @@
+
 numbers = []
-for i in range(5);
-while True:
-    try:
- num = int(input("ป้อนจำนวนเต็ม: "))
-            numbers.append(num)
-            break
-        except ValueError:
-            print("กรุณาป้อนเฉพาะจำนวนเต็ม")
-            numbers.sort()
-            print("ข้อมูลที่เรียงลำดับแล้ว:", numbers)
+
+print("ใส่ตัวเลข 5 ตัวเลข:")
+for i in range(5):
+    num = int(input(f"เลขที่ {i + 1}: "))
+    numbers.append(num)
+
+numbers.sort()
+
+print("ลำดับจากน้อยไปมาก:")
+print(numbers)
